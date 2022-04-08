@@ -63,6 +63,8 @@ python manage.py migrate
 
 ### Store logs into the database
 
+![Alt text](https://github.com/Ragib01/django_log_tracker/blob/main/logs.png?raw=true, "Logger")
+
 Log every request into the database.
 
 ```python
