@@ -1,5 +1,5 @@
 # django_log_tracker: A Django app to conduct api logs
-![version](https://img.shields.io/badge/version-1.0.1-blue.svg)
+![version](https://img.shields.io/badge/version-1.0.2-blue.svg)
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
 
 <a href="https://github.com/Ragib01/django_log_tracker"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
@@ -34,7 +34,7 @@ pip install django-log-tracker
 pip install requests
 ```
 
-4. Add "django_log_tracker" to your INSTALLED_APPS setting like this
+3. Add "django_log_tracker" to your INSTALLED_APPS setting like this
 
 ```python
 INSTALLED_APPS = [
@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-3.  Add in MIDDLEWARE
+4. Add in MIDDLEWARE
 
 ```python
 MIDDLEWARE = [
@@ -52,7 +52,7 @@ MIDDLEWARE = [
 ]
 ```
 
-4. Run
+5. Run
 
 ```shell
 python manage.py migrate
@@ -63,8 +63,6 @@ python manage.py migrate
 
 ### Store logs into the database
 
-![Alt text](https://github.com/Ragib01/django_log_tracker/blob/main/logs.png?raw=true, "Logger")
-
 Log every request into the database.
 
 ```python
@@ -72,10 +70,20 @@ DJANGO_LOG_TRACKER_DATABASE = True  # Default to False
 ```
 
 - Logs will be available in Django Admin Panel.
+
+![logs](https://github.com/Ragib01/django_log_tracker/blob/main/logs.png?raw=true)
+
 - The search bar will search in Request Body, Response, Headers and API URL.
+
+![search-bar](https://github.com/Ragib01/django_log_tracker/blob/main/search-bar.png?raw=true)
+
 - You can also filter the logs based on the "added_on" date, Status Code and Request Methods.
 
+![filter-box](https://github.com/Ragib01/django_log_tracker/blob/main/filter-box.png?raw=true)
+
 ### Track client ip address
+
+![ip](https://github.com/Ragib01/django_log_tracker/blob/main/ip.png?raw=true)
 
 ```python
 DJANGO_LOG_TRACKER_IP = True # Default to False
@@ -87,11 +95,17 @@ DJANGO_LOG_TRACKER_IP = True # Default to False
 DJANGO_LOG_TRACKER_IP_GEOLOCATION = True # Default to False
 ```
 
-#### check version
+#### Note:
+> API response may get slower for ***DJANGO_LOG_TRACKER_IP*** and
+***DJANGO_LOG_TRACKER_IP_GEOLOCATION***. So by default they both are false.
+
+### API Data into Charts
+
+![chart](https://github.com/Ragib01/django_log_tracker/blob/main/graph.png?raw=true)
+
+#### Check version
 ```shell
 >>> import django_log_tracker
 >>> django_log_tracker.__version__
 ```
-#### Note:
-> API response may get slower for ***DJANGO_LOG_TRACKER_IP*** and
-***DJANGO_LOG_TRACKER_IP_GEOLOCATION***. So by default they both are false.
+
