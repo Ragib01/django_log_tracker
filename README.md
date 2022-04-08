@@ -79,7 +79,7 @@ DJANGO_LOG_TRACKER_DATABASE = True  # Default to False
 
 - You can also filter the logs based on the "added_on" date, Status Code and Request Methods.
 
-![filter-box](https://github.com/Ragib01/django_log_tracker/blob/main/filter-box.png?raw=true)
+![filter](https://github.com/Ragib01/django_log_tracker/blob/main/filter.png?raw=true)
 
 ### Track client ip address
 
