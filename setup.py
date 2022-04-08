@@ -19,7 +19,6 @@ setup(
     author_email="ragibsh.me@gmail.com",
     license="MIT",
     classifiers=[
-        'Development Status :: 1 - Production/Stable',
         'Environment :: Web Environment',
         'Framework :: Django',
         'Framework :: Django :: 2.2',

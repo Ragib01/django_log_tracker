@@ -28,7 +28,13 @@ It logs all the API information for content type "application/json".
 pip install django-log-tracker
 ```
 
-2. Add "django_log_tracker" to your INSTALLED_APPS setting like this
+2. Install requests
+
+```shell
+pip install requests
+```
+
+4. Add "django_log_tracker" to your INSTALLED_APPS setting like this
 
 ```python
 INSTALLED_APPS = [
@@ -79,6 +85,11 @@ DJANGO_LOG_TRACKER_IP = True # Default to False
 DJANGO_LOG_TRACKER_IP_GEOLOCATION = True # Default to False
 ```
 
+#### check version
+```shell
+>>> import django_log_tracker
+>>> django_log_tracker.__version__
+```
 #### Note:
 > API response may get slower for ***DJANGO_LOG_TRACKER_IP*** and
 ***DJANGO_LOG_TRACKER_IP_GEOLOCATION***. So by default they both are false.
