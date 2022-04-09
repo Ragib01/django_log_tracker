@@ -10,11 +10,11 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="django_log_tracker",
-    version="1.0.2",
+    version="1.0.3",
     description="A Django app to conduct api logs",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/Ragib01/django_log_tracker.git",
+    url="https://github.com/Ragib01/django_log_tracker",
     author="Ragib Shahriar",
     author_email="ragibsh.me@gmail.com",
     license="MIT",

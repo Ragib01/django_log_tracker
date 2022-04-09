@@ -1,5 +1,8 @@
 # django_log_tracker: A Django app to conduct api logs
-![version](https://img.shields.io/badge/version-1.0.2-blue.svg)
+![version](https://img.shields.io/badge/version-1.0.3-blue.svg)
+[![Downloads](https://pepy.tech/badge/django-log-tracker)](https://pepy.tech/project/django-log-tracker)
+[![Downloads](https://pepy.tech/badge/django-log-tracker/month)](https://pepy.tech/project/django-log-tracker)
+[![Downloads](https://pepy.tech/badge/django-log-tracker/week)](https://pepy.tech/project/django-log-tracker)
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
 
 <a href="https://github.com/Ragib01/django_log_tracker"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>

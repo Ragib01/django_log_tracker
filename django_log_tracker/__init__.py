@@ -17,7 +17,7 @@ if os.environ.get('RUN_MAIN', None) != 'true':
 LOG_TRACKER_SIGNAL = Events()
 
 __title__ = 'Django Log Tracker'
-__version__ = '1.0.2'
+__version__ = '1.0.3'
 __author__ = 'Ragib Shahriar'
 __license__ = 'MIT LICENSE'
 __copyright__ = 'Copyright 2022 Ragib Shahriar'
